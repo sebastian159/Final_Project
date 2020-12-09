@@ -18,4 +18,10 @@ urlpatterns = [
     path('covid_tips', views.covid_tips, name="covid_tips"),
     path('recipes', views.recipes, name="recipes"),
 
+    path('register/', views.register_view, name="register"),
+    path('login/', views.login_view, name='login'),
+    path('logout/', views.logout_view, name='logout'),
+
+
+
     ]
