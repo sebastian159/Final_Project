@@ -1,0 +1,47 @@
+{% extends "FitnessPage/base.html" %}
+{% load static %}
+
+
+{% block body %}
+
+
+{#    #}
+{#    style="background-image: {% static "images/swim-and-fitness-background.jpg"%}"#}
+
+
+    <div class="jumbotron " style="background-image: url({% static 'images/fresh.jpg' %})">
+        <h1 class="display-3 text-white" style="text-align: center" >Fitness Fanatics</h1>
+        <p class="lead text-white" style="text-align: center">"If you want something you've never had, You must be willing to do something you've never done"</p>
+        <p class="text-white float-middle" style="text-align: center"> -Thomas Jefferson</p>
+        <hr class="my-4">
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <div style="text-align: center">
+        <a class="btn btn-secondary btn-lg" href="/FitnessPage/workout" role="button">Workouts</a>
+        <a class="btn btn-secondary btn-lg" href="/FitnessPage/recipes" role="button">Recipes</a>
+        <a class="btn btn-secondary btn-lg" href="/FitnessPage/health_tips" role="button">Health Tips</a>
+        <a class="btn btn-secondary btn-lg" href="/FitnessPage/goals" role="button">Fitness Goals</a>
+
+        </div>
+</div>
+
+
+
+    <div class="card">
+
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+  </div>
+</div>
+
+
+{% endblock %}

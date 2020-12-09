@@ -1,0 +1,107 @@
+{% extends "FitnessPage/base.html" %}
+{% load static %}
+
+
+{% block body %}
+
+<h1> Health Tips </h1>
+
+    <div  class="card text-dark bg-light mb-3 mx-auto" style="max-width: 1080px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="{% static 'images/healthy-eating-ingredients-732x549-thumbnail-732x549.jpg' %}" class="card-img" alt="...">
+
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Maintain a Balanced Diet</h5>
+        <p class="card-text">A balanced diet has been proven to raise energy levels as well as enhance your quality of life.  Eating a combination of foods such as fruit, vegetables, whole grains, and nuts can help reduce your risk of malnutrition, diabetes, heart disease and cancer</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div  class="card text-white bg-dark mb-3 mx-auto" style="max-width: 1080px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="{% static 'images/sleep.jpg' %}" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Get a Full Night's Sleep</h5>
+        <p class="card-text">A full seven to eight hours of sleep can have plenty of beneficial effects for your physical and mental health.</p>
+          <ul>
+              <li> Boosts your immune System </li>
+              <li> Increases Productivity </li>
+              <li> Improves Memory </li>
+              <li> A lack of sleep can increase your chances of getting into a car crash </li>
+
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div  class="card text-white bg-info mb-3 mx-auto" style="max-width: 1080px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="{% static 'images/nosmoking_569479.jpg' %}" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Stay away from Smoking</h5>
+        <p class="card-text">Needless to say, smoking cigarettes and other forms of tobacco has been proven to be detrimental to one's health.  Tobacco causes lung disease, heart disease, stroke and cancer.  If you or someone you know is struggling with nicotine addiction please refer them to the SAMHSA (Substance Abuse and Mental Health Services Administration National Helpline below</p>
+
+
+            <button type="button" class="btn btn-light">SAMHSA Website</button>
+
+            <button type="button" class="btn btn-light float-right">1-800-662-HELP (4357)</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div  class="card text-dark bg-light mb-3 mx-auto" style="max-width: 1080px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="{% static 'images/health-insurance.jpg' %}" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Obtain Health Insurance</h5>
+        <p class="card-text">There has been countless medical breakthroughs in the past century and it is imperative to make use of them.  If you have a chronic health issue such as Asthma or Diabetes it is of grave importance to have a Health Provider to provide you with necessary medication.  Health Insurance can greatly reduce the cost of these life-altering medications and, in the event if a life-threatening accident, Health Insurance can help you avoid life-altering debt</p>
+          <p> If you are in need of Health Insurance please visit the link below </p>
+
+            <button type="button" class="btn btn-success">Obtain Health Insurance</button>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div  class="card text-white bg-dark mb-3 mx-auto" style="max-width: 1080px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="{% static 'images/covid-mental-health-blog-header.jpg' %}" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Be Aware of Your Mental Health Just as Much as Your Physical Health</h5>
+        <p class="card-text">Depression and Anxiety is just as debilitating as a medical emergency if not more dangerous. </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}
