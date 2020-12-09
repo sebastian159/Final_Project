@@ -38,13 +38,13 @@
             {% if t.completed == True %}
 
 
-                    <div class="row" style="border: 10px solid silver;
-                border-radius: .25rem;
-                background: ghostwhite;
-                padding: 10px;
-                margin: 10px;" id="background">
-                <div class="col-sm" id="info">
-                    <strong>{{ t.goal }}</strong>
+                    <div class="row" style="border: 5px green;
+                        border-radius: .25rem;
+                        background: darkseagreen;
+                        padding: 10px;
+                        margin: 10px;" id="background">
+                        <div class="col-sm" id="info">
+                            <strong>{{ t.goal }} Completed!</strong>
                     <br>
                     <span style="font-size: .7rem; color: gray;">{{ t.created_at }}</span>
                 </div>
@@ -68,27 +68,11 @@
 
 
 
-
             {% endif %}
 
 
-
-{#            <script>#}
-{#                    $(document).ready(function(){#}
-{#                        $('#{{t.id}}').click(function(){#}
-{#                            $('#{{ t.id }}').hide();#}
-{#                            $('#info').wrap("<strike>");#}
-{#                            $('#background').css('background','#eeeeee')#}
-{#                        });#}
-{#                        });#}
-{#            </script>#}
-
             </div>
         {% endfor %}
-
-
-
-
 
 
 {% endblock %}

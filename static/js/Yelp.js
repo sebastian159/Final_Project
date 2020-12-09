@@ -41,7 +41,7 @@ $(document).ready(function () {
                         const address = item.location.address1;
                         const city = item.location.city;
                         const zipcode = item.location.zip_code;
-                        const transactions = item.transactions;
+
 
                         // Append our result into our page
                         $('#results').append('                    ' +
@@ -78,10 +78,10 @@ $(document).ready(function () {
                             '                        </div>\n' +
                             '                    </div');
                         ratingGenerator(parseInt(rating), i);
-                        transactionGenerator(transactions, i);
+
                     });
                 } else {
-                    // If our results are 0; no businesses were returned by the JSON therefor we display on the page no results were found
+
                     $('#results').append('<h5>We discovered no results!</h5>');
                 }
 
@@ -108,12 +108,6 @@ $(document).ready(function () {
         }
     }
 
-    // A function to generate badge-pill for different transaction information of each business
-    function transactionGenerator(transactions, yelp) {
-        for (const transaction of transactions) {
-            $('#transaction-'+yelp).append(`<span class="badge badge-pill badge-primary">${transaction}</span>`);
-        }
-    }
 
 
 });
